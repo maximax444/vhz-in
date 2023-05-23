@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ВХЗ — Пресс-центр</title>
+    <meta name="title" content="ВХЗ — инновационный химический холдинг">
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевые слова и фразы через запятую" />
+    <link rel="icon" href="/fav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="fullpage">
+        <div class="mobile-menu">
+            <div class="mobile-menu__top">
+                <a href="tel:+74922325242" class="mobile-menu__phone">+7 (4922) 32-52-42</a>
+                <div class="mobile-menu__cross"></div>
+            </div>
+            <div class="mobile-menu__search">
+                <input id="mobile-menu-search-input" type="text" placeholder="Поиск..."
+                    class="mobile-menu__search-input">
+                <label class="mobile-menu__search-icon" for="mobile-menu-search-input">
+                    <img src="icons/hex.svg" alt="Иконка" class="mobile-menu__search-icon-img">
+                </label>
+            </div>
+            <svg class="mobile-menu__back-btn" width="16" height="15" viewBox="0 0 16 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 7.5L3.00001 7.5M3.00001 7.5L8.00001 13M3.00001 7.5L8.00001 2" stroke="#1B3280"
+                    stroke-width="3" />
+            </svg>
+            <nav class="mobile-menu__nav ">
+                <ul class="mobile-menu__nav-list">
+                    <li class="mobile-menu__nav-item">Конкурс</li>
+                    <li class="mobile-menu__nav-item"><a href="blog.html">Новости</a></li>
+                    <li class="mobile-menu__nav-item mobile-menu__submenu-btn">
+                        <a href="about.html">О нас</a>
+                        <svg class="mobile-menu__submenu-icon" width="8" height="5" viewBox="0 0 8 5" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
+                        </svg>
+                        <ul class="mobile-menu__nav-list mobile-menu__submenu">
+                            <li class="mobile-menu__nav-item"><a href="history.html">История</a></li>
+                            <li class="mobile-menu__nav-item mobile-menu__submenu-btn">
+                                Холдинг
+                                <svg class="mobile-menu__submenu-icon" width="8" height="5" viewBox="0 0 8 5"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
+                                </svg>
+                                <ul class="mobile-menu__nav-list mobile-menu__submenu">
+                                    <li class="mobile-menu__nav-item">Состав</li>
+                                    <li class="mobile-menu__nav-item">Миссия</li>
+                                    <li class="mobile-menu__nav-item">Цели</li>
+                                    <li class="mobile-menu__nav-item">Наша команда</li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu__nav-item">Официальная информация</li>
+                            <li class="mobile-menu__nav-item"><a href="social.html">Социальные проекты</a></li>
+                            <li class="mobile-menu__nav-item">
+                                Стандарты раскрытия информации
+                                <svg class="mobile-menu__submenu-icon" width="8" height="5" viewBox="0 0 8 5"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
+                                </svg>
+                            </li>
+                            <li class="mobile-menu__nav-item"><a href="papers.html">Ценные бумаги химического завода</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="resch.html">Исследования</a>
+                        <svg class="mobile-menu__submenu-icon" width="8" height="5" viewBox="0 0 8 5" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
+                        </svg>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="manuf.html">Производство</a>
+                        <svg class="mobile-menu__submenu-icon" width="8" height="5" viewBox="0 0 8 5" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
+                        </svg>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="ways.html">Развитие</a>
+                        <svg class="mobile-menu__submenu-icon" width="8" height="5" viewBox="0 0 8 5" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
+                        </svg>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="press.html">Пресс-центр</a>
+                        <svg class="mobile-menu__submenu-icon" width="8" height="5" viewBox="0 0 8 5" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
+                        </svg>
+                    </li>
+                    <li class="mobile-menu__nav-item"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header__top">
+                    <div class="site-header__top-left">
+                        <a href="/" class="site-header__logo">
+                            <img class="site-header__logo-img" src="icons/logo.svg" alt="Лого">
+                        </a>
+                    </div>
+                    <div class="site-header__top-right">
+                        <a href="tel:+74922325242" class="site-header__phone">+7 (4922) 32-52-42</a>
+                        <div class="site-header__search">
+                            <input id="header-search-input" type="text" placeholder="Поиск..."
+                                class="site-header__search-input">
+                            <label class="site-header__search-icon" for="header-search-input">
+                                <img src="icons/hex.svg" alt="Иконка" class="site-header__search-icon-img">
+                            </label>
+                        </div>
+                        <div class="hamburger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-header__bottom">
+                    <nav class="site-header__nav">
+                        <ul class="site-header__nav-list">
+                            <li class="site-header__nav-item">
+                                <div class="site-header__nav-item-wrapper">
+                                    <div class="site-header__nav-item-title">Конкурс</div>
+                                </div>
+                            </li>
+                            <li class="site-header__nav-item">
+                                <div class="site-header__nav-item-wrapper">
+                                    <a href="/blog.html" class="site-header__nav-item-title">Новости</a>
+                                </div>
+                            </li>
+                            <li class="site-header__nav-item">
+                                <div class="site-header__nav-item-wrapper">
+                                    <a href="about.html" class="site-header__nav-item-title">
+                                        О нас
+                                        <svg class="site-header__first-submenu-list-icon" width="8" height="5"
+                                            viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
+                                        </svg>
+                                    </a>
+                                    <ul class="site-header__first-submenu">
+                                        <li class="site-header__first-submenu-item">
+                                            <a href="/history.html" class="site-header__last-submenu-title">
+                                                История
+                                            </a>
+                                        </li>
+                                        <li class="site-header__first-submenu-item">
+                                            <a href="about.html" class="site-header__last-submenu-title">
+                                                Холдинг
+                                                <svg class="site-header__last-submenu-icon" width="6" height="9"
+                                                    viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 8L4.5 4.5L1 1" stroke="#1B3281" />
+                                                </svg>
+                                            </a>
+                                            <ul class="site-header__last-submenu">
+                                                <li class="site-header__last-submenu-item">Состав</li>
+                                                <li class="site-header__last-submenu-item">Миссия</li>
+                                                <li class="site-header__last-submenu-item">Цели</li>
+                                                <li class="site-header__last-submenu-item">Наша команда</li>
+                                            </ul>
+                                        </li>
+                                        <li class="site-header__first-submenu-item">
+                                            <div class="site-header__last-submenu-title">
+                                                Официальная информация
+                                            </div>
+                                        </li>
+                                        <li class="site-header__first-submenu-item">
+                                            <a href="social.html" class="site-header__last-submenu-title">
+                                                Социальные проекты
+                                            </a>
+                                        </li>
+                                        <li class="site-header__first-submenu-item">
+                                            <div class="site-header__last-submenu-title">
+                                                Стандарты раскрытия информации
+                                                <svg class="site-header__last-submenu-icon" width="6" height="9"
+                                                    viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 8L4.5 4.5L1 1" stroke="#1B3281" />
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li class="site-header__first-submenu-item">
+                                            <a href="papers.html" class="site-header__last-submenu-title">
+                                                Ценные бумаги химического завода
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="site-header__submenu-overlay"></div>
+                            </li>
+                            <li class="site-header__nav-item">
+                                <div class="site-header__nav-item-wrapper">
+                                    <a href="resch.html" class="site-header__nav-item-title">
+                                        Исследования
+                                        <svg class="site-header__first-submenu-list-icon" width="8" height="5"
+                                            viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="site-header__nav-item">
+                                <div class="site-header__nav-item-wrapper">
+                                    <a href="manuf.html" class="site-header__nav-item-title">
+                                        Производство
+                                        <svg class="site-header__first-submenu-list-icon" width="8" height="5"
+                                            viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="site-header__nav-item">
+                                <div class="site-header__nav-item-wrapper">
+                                    <a href="ways.html" class="site-header__nav-item-title">
+                                        Развитие
+                                        <svg class="site-header__first-submenu-list-icon" width="8" height="5"
+                                            viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="site-header__nav-item">
+                                <div class="site-header__nav-item-wrapper">
+                                    <a href="press.html" class="site-header__nav-item-title">
+                                        Пресс-центр
+                                        <svg class="site-header__first-submenu-list-icon" width="8" height="5"
+                                            viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="site-header__nav-item">
+                                <div class="site-header__nav-item-wrapper">
+                                    <a href="contacts.html" class="site-header__nav-item-title">Контакты</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="press">
+            <div class="container">
+                <ul class="bread">
+                    <li><a href="">Главная / </a></li>
+                    <li><span>Пресс-центр</span></li>
+                </ul>
+                <h1 class="press__title animate__animated animate__fadeInDown">Пресс-центр</h1>
+            </div>
+            <div class="press__prev">
+                <div class="press__img animate__animated animate__fadeInRight">
+                    <img src="img/press-img.jpg" alt="">
+                </div>
+                <div class="container animate__animated animate__fadeInDown">
+                    <div class="press__logo"><img src="img/press-logo.png" alt=""></div>
+                    <div class="press__name">Мы с радостью расскажем вам о&nbsp;главных события жизни ВХЗ 31
+                    </div>
+                    <div class="press__descr">новых продуктах, принимаемых решениях и&nbsp;комментариях руководства
+                        холдинга
+                        по&nbsp;текущим вопросам.</div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="press__top">
+                    <h2 class="press__subtitle animate__animated animate__fadeInLeft">Пресс-релизы</h2>
+                    <div class="press__right animate__animated animate__fadeInRight">
+                        <p>Мы регулярно публикуем информацию о&nbsp;новых продуктах и&nbsp;главных событиях холдинга</p>
+                        <div class="press__drop">
+                            <label class="facts__drop">
+                                <select>
+                                    <option value="">2023</option>
+                                    <option value="">2022</option>
+                                    <option value="">2021</option>
+                                    <option value="">2020</option>
+                                    <option value="">2019</option>
+                                    <option value="">2018</option>
+                                    <option value="">2017</option>
+                                    <option value="">2016</option>
+                                    <option value="">2015</option>
+                                    <option value="">2014</option>
+                                    <option value="">2013</option>
+                                    <option value="">2012</option>
+                                    <option value="">2011</option>
+                                    <option value="">2006</option>
+                                    <option value="">2005</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__wrap">
+                    <a href="" class="blog__block animate__animated animate__fadeInUp wow">
+                        <span class="blog__img">
+                            <img src="img/blog-main.png" alt="">
+                        </span>
+                        <span class="blog__name">В Гусь-Хрустальном открывается новый химико-технологический
+                            кластер</span>
+                        <span class="blog__text">Владимирский химический завод попал в список системообразующих
+                            предприятий
+                            России
+                            Основная производственная площадка инновационного химического холдинга ВХЗ.31...</span>
+                        <span class="blog__link"><span></span>Подробнее</span>
+                    </a>
+                    <a href="" class="blog__block animate__animated animate__fadeInUp wow">
+                        <span class="blog__img">
+                            <img src="img/blog1.png" alt="">
+                        </span>
+                        <span class="blog__name">Пресс-релиз ВХЗ получил статус системообразующего предприятия</span>
+                        <span class="blog__text">Владимирский химический завод попал в список системообразующих
+                            предприятий
+                            России
+                            Основная производственная площадка инновационного химического холдинга ВХЗ.31...</span>
+                        <span class="blog__link"><span></span>Подробнее</span>
+                    </a>
+                    <a href="" class="blog__block animate__animated animate__fadeInUp wow">
+                        <span class="blog__img">
+                            <img src="img/blog2.png" alt="">
+                        </span>
+                        <span class="blog__name">ВХЗ.31 запустил производство биоразлагаемых композитов</span>
+                        <span class="blog__text">Владимирский химический завод запускает производство композитов с
+                            растительными волокнами. «Зеленые компаунды» — новейшее направление в производстве
+                            полимерных...
+                        </span>
+                        <span class="blog__link"><span></span>Подробнее</span>
+                    </a>
+                    <a href="" class="blog__block animate__animated animate__fadeInUp wow">
+                        <span class="blog__img">
+                            <img src="img/blog3.png" alt="">
+                        </span>
+                        <span class="blog__name">Инновационный химический холдинг ВХЗ.31 открыл первый пункт приема
+                            пластиковых...</span>
+                        <span class="blog__text">Ненужный пластик - бутылки, флаконы, трубы
+                            и канистры – будут перерабатываться на базе предприятия ВХЗ.31. Второй важной экологической
+                            инициативой стала установка...</span>
+                        <span class="blog__link"><span></span>Подробнее</span>
+                    </a>
+                    <a href="" class="blog__block animate__animated animate__fadeInUp wow">
+                        <span class="blog__img">
+                            <img src="img/blog4.png" alt="">
+                        </span>
+                        <span class="blog__name">День Химика на ВХЗ.31</span>
+                        <span class="blog__text">В рамках Тринадцатой международной выставки - Композит-Экспо 2021,
+                            выступили Владимир Кучеренко - руководитель направления технологий и инноваций
+                            холдинга...</span>
+                        <span class="blog__link"><span></span>Подробнее</span>
+                    </a>
+                </div>
+                <div class="press-bot animate__animated animate__fadeInDown wow">
+                    <div class="press-bot__title">Дополнительные материалы</div>
+                    <div class="press-bot__right"></div>
+                </div>
+                <div class="contacts-soc__wrap">
+                    <a href="" class="contacts-soc__block animate__animated animate__fadeInLeft wow">
+                        <span class="contacts-soc__name">Презентация о&nbsp;холдинге</span>
+                        <span class="contacts-soc__descr">которая поможет Вам ознакомиться с&nbsp;нашей деятельностью
+                        </span>
+                        <span class="contacts-soc__link">Скачать <svg width="30" height="7" viewBox="0 0 30 7"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 3.5H29M29 3.5L27 1M29 3.5L27 6" stroke="white" />
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="" class="contacts-soc__block animate__animated animate__fadeInRight wow">
+                        <span class="contacts-soc__name">Логотип компании</span>
+                        <span class="contacts-soc__descr">все вариации логотипа в различных форматах</span>
+                        <span class="contacts-soc__link">Скачать <svg width="30" height="7" viewBox="0 0 30 7"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 3.5H29M29 3.5L27 1M29 3.5L27 6" stroke="white" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <div class="site-footer__wrapper">
+                <div class="container site-footer__container">
+                    <nav class="site-footer__nav">
+                        <ul class="site-footer__nav-list">
+                            <li class="site-footer__nav-item"><a href="/blog.html">Новости</a></li>
+                            <li class="site-footer__nav-item"><a href="/ways.html">Развитие</a></li>
+                            <li class="site-footer__nav-item"><a href="/about.html">О нас</a></li>
+                            <li class="site-footer__nav-item"><a href="/press.html">Пресс-центр</a></li>
+                            <li class="site-footer__nav-item"><a href="/resch.html">Исследования</a></li>
+                            <li class="site-footer__nav-item"><a href="/contacts.html">Контакты</a></li>
+                            <li class="site-footer__nav-item"><a href="/manuf.html">Производство</a></li>
+                            <li class="site-footer__nav-item"><a href="">Сайт раскрытия информации</a></li>
+                        </ul>
+                    </nav>
+                    <div class="site-footer__contacts">
+                        <div class="site-footer__contact">
+                            <div class="site-footer__contact-label">Телефон</div>
+                            <a href="tel:+74922325242" class="site-footer__contact-value">+7 (4922) 32-52-42</a>
+                        </div>
+                        <div class="site-footer__contact">
+                            <div class="site-footer__contact-label">E-mail</div>
+                            <a href="mailto:vhz@vhz31.ru" class="site-footer__contact-value">vhz@vhz31.ru</a>
+                        </div>
+                        <div class="site-footer__contact site-footer__contact_adress">
+                            <div class="site-footer__contact-label">600000 г. Владимир, ул. Б. Нижегородская, 81</div>
+                        </div>
+                    </div>
+                    <div class="site-footer__right">
+                        <img src="icons/site-footer/chat-icon.svg" alt="Иконка" class="site-footer__chat-btn">
+                        <div class="site-footer__socials">
+                            <svg class="site-footer__socials-item" width="18" height="11" viewBox="0 0 18 11"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.7908 6.37695C14.5018 6.01567 14.5854 5.85739 14.7908 5.5374C14.7943 5.53396 17.1724 2.28586 17.4196 1.18481C17.5415 0.782236 17.4196 0.489769 16.8312 0.489769H14.8814C14.3834 0.489769 14.1571 0.744387 14.0353 1.02653C14.0353 1.02653 13.0429 3.37315 11.6398 4.89397C11.1871 5.33439 10.9782 5.47546 10.731 5.47546C10.6091 5.47546 10.4211 5.33439 10.4211 4.93182V1.18137C10.4211 0.699657 10.2819 0.486328 9.87099 0.486328H6.80698C6.4971 0.486328 6.30908 0.709979 6.30908 0.919867C6.30908 1.37749 7.01241 1.48071 7.08553 2.76757V5.5546C7.08553 6.16362 6.97411 6.27717 6.72342 6.27717C6.06187 6.27717 4.45326 3.92023 3.49924 1.22266C3.30774 0.699657 3.11972 0.486328 2.61834 0.486328H0.668511C0.111418 0.486328 0 0.740946 0 1.02309C0 1.522 0.661547 4.01313 3.08142 7.30252C4.69351 9.54591 6.96367 10.7639 9.02839 10.7639C10.2679 10.7639 10.4211 10.4921 10.4211 10.0276C10.4211 7.88401 10.3097 7.68101 10.9295 7.68101C11.2185 7.68101 11.7129 7.82208 12.8723 8.90593C14.1954 10.1893 14.4148 10.7639 15.1564 10.7639H17.1062C17.6633 10.7639 17.9419 10.4921 17.7817 9.96225C17.4057 8.83711 14.9022 6.53179 14.7908 6.37695Z"
+                                    fill="#1B3281" />
+                            </svg>
+                            <svg class="site-footer__socials-item" width="18" height="15" viewBox="0 0 18 15"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.99372 9.68078L6.69777 13.7788C7.11907 13.7788 7.30361 13.5998 7.52297 13.3831L9.50064 11.5147L13.5988 14.4807C14.3508 14.8936 14.8801 14.6768 15.082 13.796L17.7735 1.33689C18.0102 0.239279 17.3731 -0.190819 16.6384 0.0775623L0.827406 6.06796C-0.251962 6.48086 -0.234554 7.07611 0.642867 7.34449L4.68528 8.58662L14.0758 2.77858C14.518 2.48955 14.9184 2.64783 14.5876 2.94029L6.99372 9.68078Z"
+                                    fill="#1B3281" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="
+        https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js
+        "></script>
+    <script>
+        new WOW({
+            mobile: false,
+        }).init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/libs/tiny-slider.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

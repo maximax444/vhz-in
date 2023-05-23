@@ -1,0 +1,308 @@
+.blog
+    padding-top: 35px
+    padding-bottom: 88px
+    &-main
+        background: #F5F5F5
+        display: flex
+        margin-bottom: 90px
+        &:hover
+            text-decoration: none
+            .blog-main__img img
+                transform: scale(1.2)
+        &__img
+            width: 640px
+            height: 410px
+            overflow: hidden
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                transition: all 1s
+        &__cont
+            width: calc(100% - 640px)
+            padding: 58px 40px
+        &__name
+            font-weight: 600
+            font-size: 25px
+            line-height: 30px
+            color: #1B3281
+            display: block
+            margin-bottom: 20px
+        &__text
+            font-weight: 400
+            font-size: 14px
+            line-height: 135.9%
+            color: #000000
+            display: block
+            margin-bottom: 35px
+        &__link
+            width: 268px
+            height: 52px
+            background: #1B3281
+            display: flex
+            align-items: center
+            justify-content: center
+            grid-gap: 12px
+            font-weight: 400
+            font-size: 14px
+            line-height: 135.9%
+            padding-bottom: 1px
+            text-transform: uppercase
+            transition: all 0.3s
+            color: #FFFFFF
+            clip-path: polygon(17px 0, 100% 0, 100% calc(100% - 17px), calc(100% - 17px) 100%, 0 100%, 0 17px)
+            &:hover
+                text-decoration: none
+                grid-gap: 20px
+    &__top
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        margin-bottom: 55px
+        grid-gap: 42px
+    &__title
+        border-top: 1px solid #1B3281
+        padding-top: 29px
+        font-weight: 600
+        font-size: 40px
+        line-height: 49px
+        color: #1B3281
+    &__right
+        border-top: 1px solid #1B3281
+        grid-column: 2/4
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 42px
+    &__block
+        display: block
+        &:hover
+            text-decoration: none
+        &:first-child
+            display: none
+    &__img
+        display: block
+        width: 100%
+        height: 245px
+        overflow: hidden
+        margin-bottom: 40px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            transition: all 1s
+    &__name
+        height: 78px
+        margin-bottom: 20px
+        display: block
+        overflow: hidden
+        font-weight: 600
+        font-size: 20px
+        line-height: 24px
+        color: #1B3281
+    &__text
+        font-weight: 400
+        font-size: 14px
+        line-height: 135.9%
+        color: #000000
+        display: block
+        margin-bottom: 31px
+    &__link
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        font-weight: 400
+        font-size: 14px
+        line-height: 135.9%
+        text-transform: uppercase
+        color: #1B3281
+        grid-gap: 12px
+        padding-bottom: 10px
+        span
+            display: inline-block
+            height: 1px
+            width: 23px
+            background-color: #1B3281
+            margin-bottom: 1px
+            transition: all 0.3s
+    &__more
+        margin-top: 68px
+        width: 268px
+        height: 52px
+        background: #1B3281
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-right: 0
+        margin-left: auto
+        grid-gap: 12px
+        font-weight: 400
+        font-size: 14px
+        line-height: 135.9%
+        padding-bottom: 1px
+        text-transform: uppercase
+        transition: all 0.3s
+        color: #FFFFFF
+        clip-path: polygon(17px 0, 100% 0, 100% calc(100% - 17px), calc(100% - 17px) 100%, 0 100%, 0 17px)
+        &:hover
+            text-decoration: none
+            grid-gap: 20px
+            color: #fff
+    &__block:hover
+        .blog
+            &__img img
+                transform: scale(1.2)
+            &__link
+                span
+                    width: 50px
+.article
+    padding-top: 35px
+    padding-bottom: 100px
+    &__top
+        display: flex
+        align-items: flex-end
+        grid-gap: 15px
+        justify-content: space-between
+        margin-bottom: 40px
+        .article__img
+            display: none
+    &__share
+        width: 250px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        grid-gap: 10px
+        padding-bottom: 6px
+    &__title
+        margin: 0
+        font-weight: 600
+        font-size: 40px
+        line-height: 49px
+        color: #1B3281
+        width: calc(100% - 250px)
+    &__img
+        margin-bottom: 65px
+        img
+            width: 100%
+    &__wrap
+        columns: 2
+        grid-gap: 44px
+        p
+            font-weight: 400
+            font-size: 14px
+            line-height: 135.9%
+            color: #000000
+            display: block
+            break-inside: avoid-column
+    &__bold
+        font-weight: 600
+        font-size: 20px
+        line-height: 24px
+        color: #1B3281
+        margin-bottom: 40px
+        break-inside: avoid-column
+    &__q
+        padding: 21px 36px
+        background: #F5F5F5
+        font-weight: 400
+        font-size: 14px
+        line-height: 135.9%
+        color: #1B3281
+        margin-bottom: 40px
+        break-inside: avoid-column
+@media(max-width: 1200px)
+    .blog
+        &__wrap
+            grid-template-columns: repeat(2, 1fr)
+        &-main
+            &__img
+                width: 400px
+            &__cont
+                width: calc(100% - 400px)
+@media(max-width: 992px)
+    .blog
+        &-main
+            flex-direction: column
+            &__img
+                width: 100%
+            &__cont
+                width: 100%
+        &__top
+            grid-template-columns: repeat(2, 1fr)
+        &__right
+            grid-column: auto
+    .article
+        &__top
+            flex-wrap: wrap
+            .article__img
+                display: block
+        &__title
+            width: 100%
+            margin-bottom: 35px
+        &__share
+            width: auto
+        &__img
+            display: none
+            margin-bottom: 20px
+        &__wrap
+            columns: auto
+@media(max-width: 768px)
+    .blog
+        &__block
+            &:first-child
+                display: block
+        &-main
+            display: none
+        &__right
+            display: none
+        &__top
+            display: block
+            margin-bottom: 0
+        &__title
+            padding-top: 0
+            border-top: 0
+            margin-bottom: 42px
+            font-size: 30px
+            line-height: 37px
+        &__wrap
+            grid-template-columns: repeat(1, 1fr)
+            grid-gap: 32px
+    .article
+        &__title
+            font-size: 30px
+            line-height: 40px
+@media(max-width: 576px)
+    .blog
+        padding: 50px 0
+        &__img
+            height: 225px
+            margin-bottom: 30px
+        &__name
+            height: auto
+        &__more
+            width: 100%
+            margin-top: 50px
+    .article
+        padding-top: 50px
+        padding-bottom: 50px
+        &__title
+            font-size: 20px
+            line-height: 24px
+        &__img
+            margin-bottom: 12px
+        &__top
+            margin-bottom: 25px
+            grid-gap: 0
+        &__wrap
+            p
+                font-size: 14px
+                line-height: 21px
+                margin-bottom: 21px
+        &__bold
+            font-size: 14px
+            line-height: 148.9%
+            margin-bottom: 35px
+        &__q
+            margin-left: -18px
+            margin-right: -18px
+            padding: 20px 18px
+            margin-bottom: 30px

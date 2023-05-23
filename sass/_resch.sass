@@ -1,0 +1,352 @@
+.resch
+    padding-top: 35px
+    &__top
+        height: 500px
+        background: #1B3281 url('../img/press-bg.svg') center no-repeat
+        background-size: cover
+        position: relative
+        padding-top: 50px
+        padding-bottom: 42px
+    &__name
+        font-weight: 600
+        font-size: 40px
+        line-height: 49px
+        color: #FFFFFF
+        max-width: 480px
+        margin-bottom: 20px
+    &__text
+        p
+            font-weight: 400
+            font-size: 14px
+            line-height: 135.9%
+            color: #FFFFFF
+            max-width: 460px
+            margin-bottom: 27px
+        ul
+            margin: 0
+            padding: 0
+            list-style-type: none
+            max-width: 460px
+            li
+                padding-left: 30px
+                font-weight: 600
+                font-size: 14px
+                line-height: 135.9%
+                margin-bottom: 19px
+                color: #FFFFFF
+                position: relative
+                &::before
+                    content: ""
+                    display: block
+                    width: 10px
+                    height: 10px
+                    background: #fff
+                    position: absolute
+                    left: 0
+                    top: 2px
+                    clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%)
+    &__img
+        position: absolute
+        top: 0
+        right: 0
+        display: flex
+        height: 100%
+        width: 700px
+        clip-path: polygon(170px 0, 100% 0, 100% 100%, 116px 100%, 0 calc(100% - 205px))
+        video
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &-lab
+        margin-top: 100px
+        padding-bottom: 125px
+        &__top
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: 42px
+            margin-bottom: 50px
+        &__descr
+            grid-column: 2/4
+            font-weight: 400
+            font-size: 14px
+            line-height: 135.9%
+            padding-top: 52px
+            border-top: 1px solid #1B3281
+        &__title
+            padding-top: 30px
+            border-top: 1px solid #1B3281
+            font-weight: 600
+            font-size: 40px
+            line-height: 49px
+            color: #1B3281
+        &__wrap
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: 42px
+            margin-bottom: 90px
+        &__img
+            grid-column: 2/4
+            height: 375px
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 185px 100%, 0 calc(100% - 160px))
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &__subtitle
+            margin-bottom: 27px
+            font-weight: 600
+            font-size: 20px
+            line-height: 24px
+            color: #1B3281
+        &__cont
+            ul
+                margin: 0
+                padding: 0
+                list-style-type: none
+                li
+                    padding-left: 30px
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 135.9%
+                    margin-bottom: 19px
+                    color: #000000
+                    position: relative
+                    &::before
+                        content: ""
+                        display: block
+                        width: 10px
+                        height: 10px
+                        background: #1B3281
+                        position: absolute
+                        left: 0
+                        top: 2px
+                        clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%)
+        &__block
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 42px
+            background-color: #fff
+        &__photo
+            height: 410px
+            clip-path: polygon(0 0, calc(100% - 185px) 0, 100% 160px, 100% 100%, 0 100%)
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &__nav
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding-top: 30px
+        &__arrows
+            width: calc(100% - 125px)
+            height: 1px
+            background-color: #CDCDCD
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__prev, &__next
+            cursor: pointer
+            display: flex
+        &__nums
+            font-weight: 600
+            font-size: 25px
+            line-height: 30px
+            text-transform: uppercase
+            color: #1B3281
+.his
+    padding-top: 35px
+    padding-bottom: 115px
+    &__title
+        max-width: 550px
+    &__slider
+        margin-bottom: 55px
+        padding-top: 2px
+    &__top
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 42px
+        margin-bottom: 28px
+    &__right
+        grid-column: 2/4
+        border-top: 1px solid #1B3281
+        padding-top: 38px
+    &__nav
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        grid-gap: 42px
+        .resch-lab__arrows
+            max-width: 390px
+    &__year
+        border: 1px solid #CDCDCD
+        font-weight: 600
+        font-size: 20px
+        line-height: 24px
+        padding: 10px 36px
+        color: #000000
+        span
+            font-size: 64px
+            line-height: 78px
+        &::before
+            content: ""
+            display: block
+            width: 3px
+            height: 73px
+            background: #1B3281
+            position: absolute
+            top: -2px
+            left: -2px
+            transition: all 0.3s
+            opacity: 0
+        &::after
+            content: ""
+            display: block
+            width: 174px
+            height: 3px
+            background: #1B3281
+            position: absolute
+            top: -2px
+            left: -2px
+            transition: all 0.3s
+            opacity: 0
+        &.active, &:hover
+            color: #1B3281
+            &::before, &::after
+                opacity: 1
+    &__subtitle
+        padding-top: 30px
+        border-top: 1px solid #1B3281
+        font-weight: 600
+        font-size: 40px
+        line-height: 49px
+        color: #1B3281
+    &__cont
+        &-block
+            display: none
+            &.active
+                display: flex
+                justify-content: space-between
+                align-items: flex-start
+        &-img
+            width: 48%
+            height: 290px
+            clip-path: polygon(0 0, calc(100% - 185px) 0, 100% 110px, 100% 100%, 0 100%)
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &-text
+            width: 48%
+            padding-top: 35px
+            p
+                font-size: 14px
+                line-height: 135.9%
+                max-width: 482px
+@media(max-width: 1300px)
+    .his__img
+        width: 500px
+@media(max-width: 1200px)
+    .his__img
+        width: 450px
+        max-width: 90%
+    .resch
+        &__img
+            width: 500px
+@media(max-width: 992px)
+    .resch
+        &__img
+            width: 500px
+            height: 300px
+            clip-path: polygon(70px 0, 100% 0, 100% 100%, 116px 100%, 0 calc(100% - 205px))
+            top: auto
+            bottom: 0
+        &__top
+            padding-bottom: 320px
+            height: auto
+        &-lab
+            &__top
+                display: block
+                grid-gap: 0
+            &__descr
+                border-top: 0
+                padding-top: 36px
+            &__wrap
+                display: block
+            &__img
+                margin-top: 35px
+            &__block
+                display: flex
+                flex-direction: column-reverse
+@media(max-width: 768px)
+    .his
+        padding-top: 50px
+        padding-bottom: 75px
+        &__top
+            display: block
+        &__right
+            border-top: 0
+        &__nav
+            flex-direction: row-reverse
+        &__slider
+            margin-bottom: 32px
+        &__cont
+            &-block
+                &.active
+                    flex-direction: column-reverse
+            &-text
+                width: 100%
+                padding-top: 0
+                margin-bottom: 35px
+            &-img
+                width: 100%
+                height: 210px
+                clip-path: polygon(0 0, calc(100% - 115px) 0, 100% 100px, 100% 100%, 0 100%)
+@media(max-width: 576px)
+    .his
+        &__subtitle
+            font-size: 30px
+            line-height: 39px
+        &__slider
+            padding-left: 1px
+        &__year
+            text-align: center
+            font-size: 14px
+            line-height: 17px
+            span
+                font-size: 36px
+                line-height: 44px
+    .resch
+        padding-top: 50px
+        &__top
+            padding-top: 25px
+        &__name
+            font-size: 30px
+            line-height: 37px
+            margin-bottom: 18px
+        &__img
+            width: 90%
+            height: 295px
+            clip-path: polygon(105px 0%, calc(100% - 53px) 0, 100% 73px, 100% 100%, 58px 100%, 0 150px)
+        &-lab
+            padding-bottom: 75px
+            margin-top: 50px
+            &__title
+                font-size: 30px
+                line-height: 37px
+            &__nav
+                flex-direction: row-reverse
+            &__prev
+                width: 90px
+                overflow: hidden
+            &__next
+                width: 90px
+                overflow: hidden
+                display: flex
+                justify-content: flex-end
+            &__img
+                height: 210px
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 115px 100%, 0 calc(100% - 100px))
+            &__photo
+                height: 210px
+                clip-path: polygon(0 0, calc(100% - 115px) 0, 100% 100px, 100% 100%, 0 100%)

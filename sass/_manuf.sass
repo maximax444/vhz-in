@@ -1,0 +1,285 @@
+.manuf
+    padding-top: 35px
+    &-prod
+        padding-top: 90px
+        &__title
+            padding-top: 30px
+            margin-bottom: 56px
+            margin-top: 0
+            font-weight: 600
+            font-size: 40px
+            line-height: 49px
+            color: #1B3281
+            position: relative
+            &::before
+                content: ""
+                display: block
+                height: 1px
+                position: absolute
+                top: 0
+                left: 0
+                width: calc((100% - 84px)/3)
+                background-color: #1B3281
+            &::after
+                content: ""
+                display: block
+                height: 1px
+                position: absolute
+                top: 0
+                right: 0
+                width: calc((100% - 84px)/3 * 2 + 42px)
+                background-color: #1B3281
+        &__wrap
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 42px
+        &__name
+            height: 130px
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            background: #F5F5F5
+            padding: 34px 40px
+            padding-right: 100px
+            font-weight: 600
+            font-size: 25px
+            line-height: 30px
+            color: #1B3281
+        &__block
+            position: relative
+            width: 100%
+            height: 480px
+            overflow: hidden
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                transition: all 1s
+            &:hover
+                img
+                    transform: scale(1.2)
+                .manuf-prod__drop
+                    top: 0
+        &__drop
+            position: absolute
+            top: -100%
+            left: 0
+            width: 100%
+            transition: all 1s
+            background: #1B3281 url('../img/manuf-prod-bg.svg') right center no-repeat
+            padding: 34px 40px
+            ul
+                list-style-type: none
+                li
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 135.9%
+                    margin-top: 20px
+                    padding-left: 30px
+                    color: #FFFFFF
+                    position: relative
+                    &::before
+                        content: ""
+                        display: block
+                        width: 10px
+                        height: 10px
+                        background: #fff
+                        position: absolute
+                        left: 0
+                        top: 3px
+                        clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%)
+        &__name2
+            font-weight: 600
+            font-size: 25px
+            line-height: 30px
+            color: #FFFFFF
+            margin-bottom: 15px
+        &__descr
+            font-weight: 400
+            font-size: 14px
+            line-height: 135.9%
+            color: #FFFFFF
+            margin-bottom: 27px
+        &__subtitle
+            font-weight: 600
+            font-size: 20px
+            line-height: 135.9%
+            color: #FFFFFF
+    .about-us__wrapper
+        max-width: 100%
+        margin-top: 100px
+        min-height: 0
+        padding-bottom: 70px
+        overflow: hidden
+    .about-us__content-raw
+        width: 100%
+    &-about
+        &__title
+            margin-bottom: 24px
+        &__subtitle
+            font-size: 20px
+            line-height: 24px
+            padding-left: 195px
+            padding-right: 0px
+            width: calc((100% - 1200px) / 2 + 785px)
+            span
+                font-weight: 600
+                font-size: 20px
+                line-height: 24px
+                width: 600px
+                color: #1B3281
+        &__wrap
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: 42px
+        &__cont
+            grid-column: 2/4
+        &__bold
+            font-weight: 600
+            font-size: 20px
+            line-height: 24px
+            color: #FFFFFF
+        &__text
+            padding-top: 24px
+            font-weight: 400
+            font-size: 14px
+            line-height: 135.9%
+            color: #FFFFFF
+    &-log
+        padding-top: 90px
+        &__title
+            padding-top: 30px
+            margin-bottom: 20px
+            margin-top: 0
+            font-weight: 600
+            font-size: 40px
+            line-height: 49px
+            color: #1B3281
+            position: relative
+            &::before
+                content: ""
+                display: block
+                height: 1px
+                position: absolute
+                top: 0
+                left: 0
+                width: calc((100% - 84px)/3)
+                background-color: #1B3281
+            &::after
+                content: ""
+                display: block
+                height: 1px
+                position: absolute
+                top: 0
+                right: 0
+                width: calc((100% - 84px)/3 * 2 + 42px)
+                background-color: #1B3281
+        &__wrap
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: 42px
+        &__subtitle
+            font-weight: 600
+            font-size: 20px
+            line-height: 24px
+            color: #1B3281
+        &__img
+            grid-column: 2/4
+            height: 325px
+            width: 100%
+            clip-path: polygon(185px 0, 100% 0, 100% 100%, 0 100%, 0 145px)
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &__cont
+            ul
+                list-style-type: none
+                li
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 135.9%
+                    margin-top: 20px
+                    padding-left: 30px
+                    color: #000000
+                    position: relative
+                    &::before
+                        content: ""
+                        display: block
+                        width: 10px
+                        height: 10px
+                        background: #1B3281
+                        position: absolute
+                        left: 0
+                        top: 3px
+@media(max-width: 1200px)
+    .manuf
+        &-prod
+            &__wrap
+                grid-gap: 42px 15px
+            &__drop
+                padding: 25px 15px
+@media(max-width: 992px)
+    .manuf
+        &-prod
+            &__wrap
+                grid-template-columns: repeat(1, 1fr)
+        &-log
+            &__wrap
+                display: block
+            &__img
+                margin-top: 40px
+        .about-us__wrapper
+            padding-bottom: 0
+        &-about
+            &__subtitle
+                width: 100%
+                padding: 30px 42px
+                margin-top: 40px
+            &__wrap
+                display: block
+            &__cont
+                padding-top: 30px
+@media(max-width: 576px)
+    .manuf
+        &-about
+            &__subtitle
+                padding: 35px 18px
+                padding-bottom: 0
+        &-prod
+            padding-top: 55px
+            &__title
+                margin-bottom: 35px
+                font-size: 30px
+                line-height: 37px
+                &::before
+                    width: 100%
+            &__drop
+                display: none
+            &__block
+                height: 330px
+            &__wrap
+                grid-gap: 20px
+            &__name
+                height: 86px
+                padding: 0 25px
+                display: flex
+                align-items: center
+                font-weight: 600
+                font-size: 20px
+                line-height: 24px
+                color: #1B3281
+                top: auto
+                bottom: 0
+        &-log
+            padding-top: 50px
+            &__img
+                height: 210px
+                clip-path: polygon(calc(100% - 112px) 0, 100% 100px, 100% 100%, 0 100%, 0 0)
+            &__title
+                font-size: 30px
+                line-height: 37px
+                margin-bottom: 36px
+                &::before
+                    width: 100%

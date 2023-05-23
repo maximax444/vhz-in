@@ -1,0 +1,68 @@
+@import "old"
+.site-footer__nav-item a
+    line-height: 17px
+    color: #1b3281
+    cursor: pointer
+.site-header__nav-item-title, .site-header__last-submenu-title
+    color: #212529
+.mobile-menu__nav-item a
+    color: #212529
+.site-header__search-input
+    transition: all 0.3s
+    visibility: visible
+    opacity: 0
+.site-header__search:hover
+    .site-header__search-input
+        opacity: 1
+.site-header__search-input:focus
+    opacity: 1
+.site-header__nav-item:hover .site-header__submenu-overlay
+    display: none
+.site-header__first-submenu::before
+    content: ""
+    display: block
+    width: 300vw
+    height: 100%
+    top: 0
+    left: -100vw
+    background-color: #fff
+    position: absolute
+.site-header__first-submenu
+    top: 38px
+.fullpage
+    overflow: hidden
+.site-header__first-submenu:after
+    z-index: 0
+    background-color: transparent
+    width: 100%
+    border-left: 1px solid #1b3281
+    border-right: 1px solid #1b3281
+    pointer-events: none
+.site-header__last-submenu
+    display: block
+    opacity: 0
+    top: 50px
+    transition: all 0.3s
+.site-header__first-submenu-item:hover .site-header__last-submenu
+    opacity: 1
+    top: 0
+.site-header__last-submenu-item
+    position: relative
+    left: 0
+    transition: all 0.3s
+    &:hover
+        left: 10px
+.site-footer__nav-item
+    position: relative
+    left: 0
+    transition: all 0.3s
+    &:hover
+        left: 10px
+@import "interface"
+@import "blog"
+@import "contacts"
+@import "smalls"
+@import "invest"
+@import "resch"
+@import "about"
+@import "manuf"
