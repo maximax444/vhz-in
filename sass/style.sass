@@ -66,3 +66,252 @@
 @import "resch"
 @import "about"
 @import "manuf"
+
+.ninvest
+    .invest__top
+        margin-bottom: 0
+    &__descr
+        margin-bottom: 30px
+        max-width: 550px
+    &__text
+        font-size: 14px
+        line-height: 135.9%
+        color: #FFFFFF
+        margin: 0
+        max-width: 460px
+    &-blag
+        &__cont
+            width: 370px
+        &__img
+            width: calc(100% - 415px)
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 185px 100%, 0 calc(100% - 155px))
+    &-bot
+        &__subtitle
+            font-weight: 600
+            font-size: 20px
+            line-height: 135.9%
+            color: #FFFFFF
+            margin-bottom: 10px
+            max-width: 490px
+    &-partn
+        &__wrap
+            display: flex
+            align-items: center
+            justify-content: space-between
+            grid-gap: 15px
+            padding-top: 40px
+    &-feat
+        margin-bottom: 30px
+        padding-top: 90px
+    &-accel
+        padding-top: 90px
+        &__wrap
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            height: 800px
+            padding-bottom: 100px
+            & + .researches__content
+                display: none
+            .dark
+                transition: all 0.5s
+            &:hover
+                .dark
+                    &.strk
+                        stroke: #CDCDCD
+                    &.fill
+                        fill: #CDCDCD
+                .accel__el
+                    color: #CDCDCD
+                    span
+                        color: #CDCDCD
+        &__el
+            position: absolute
+            width: 290px
+            display: flex
+            grid-gap: 20px
+            align-items: flex-end
+            flex-direction: column-reverse
+            transition: all 0.5s
+            span
+                font-weight: 600
+                font-size: 30px
+                line-height: 30px
+                color: #1B3281
+                transition: all 0.5s
+            &:nth-child(9)
+                top: 198px
+                text-align: right
+                width: 240px
+                left: 0
+                &:hover
+                    color: #000
+                    span
+                        color: #1B3281
+                    &+svg
+                        .dark-9
+                            &.strk
+                                stroke: #1B3281
+                            &.fill
+                                fill: #1B3281
+            &:nth-child(8)
+                top: 416px
+                text-align: right
+                width: 240px
+                left: 0
+                &:hover
+                    color: #000
+                    span
+                        color: #1B3281
+                    &~svg
+                        .dark-8
+                            &.strk
+                                stroke: #1B3281
+                            &.fill
+                                fill: #1B3281
+            &:nth-child(7)
+                top: 635px
+                text-align: right
+                width: 240px
+                left: 0
+                &:hover
+                    color: #000
+                    span
+                        color: #1B3281
+                    &~svg
+                        .dark-7
+                            &.strk
+                                stroke: #1B3281
+                            &.fill
+                                fill: #1B3281
+            &:nth-child(6)
+                top: 635px
+                align-items: flex-start
+                left: 48%
+                width: 240px
+                &:hover
+                    color: #000
+                    span
+                        color: #1B3281
+                    &~svg
+                        .dark-6
+                            &.strk
+                                stroke: #1B3281
+                            &.fill
+                                fill: #1B3281
+            &:nth-child(5)
+                top: 635px
+                align-items: flex-start
+                width: 250px
+                left: auto
+                right: 0
+                &:hover
+                    color: #000
+                    span
+                        color: #1B3281
+                    &~svg
+                        .dark-5
+                            &.strk
+                                stroke: #1B3281
+                            &.fill
+                                fill: #1B3281
+            &:nth-child(2)
+                top: 0
+                align-items: flex-start
+                width: 250px
+                right: 0
+                &:hover
+                    color: #000
+                    span
+                        color: #1B3281
+                    &~svg
+                        .dark-2
+                            &.strk
+                                stroke: #1B3281
+                            &.fill
+                                fill: #1B3281
+            &:nth-child(3)
+                top: 200px
+                align-items: flex-start
+                width: 250px
+                right: 0
+                &:hover
+                    color: #000
+                    span
+                        color: #1B3281
+                    &~svg
+                        .dark-3
+                            &.strk
+                                stroke: #1B3281
+                            &.fill
+                                fill: #1B3281
+            &:nth-child(1)
+                top: 0
+                text-align: right
+                right: 47%
+                left: auto
+                width: 230px
+                &:hover
+                    color: #000
+                    span
+                        color: #1B3281
+                    &~svg
+                        .dark-1
+                            &.strk
+                                stroke: #1B3281
+                            &.fill
+                                fill: #1B3281
+            &:nth-child(4)
+                top: 415px
+                align-items: flex-start
+                width: 250px
+                right: 0
+                &:hover
+                    color: #000
+                    span
+                        color: #1B3281
+                    &~svg
+                        .dark-4
+                            &.strk
+                                stroke: #1B3281
+                            &.fill
+                                fill: #1B3281
+@media(max-width: 1199px)
+    .ninvest
+        &-accel__wrap
+            svg
+                transform: scale(0.7)
+@media(max-width: 991px)
+    .ninvest
+        &-partn
+            &__wrap
+                flex-wrap: wrap
+        &-blag
+            &__img
+                width: 100%
+        &-accel__wrap
+            display: none
+            &+ .researches__content
+                display: grid
+@media(max-width: 575px)
+    .ninvest
+        &-partn
+            &__wrap
+                grid-gap: 20px 0
+            &__block
+                width: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                img
+                    max-width: 90%
+                    max-height: 90%
+        &-blag
+            &__cont
+                width: 100%
+            &__wrap
+                grid-gap: 40px
+            &__img
+                height: 210px
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 115px 100%, 0 calc(100% - 100px))
