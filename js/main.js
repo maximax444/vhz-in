@@ -156,3 +156,11 @@ $('.ab-team__block').on('click', function () {
 
     }
 });
+$("body").on('click', '[href*="#"]', function (e) {
+    var fixed_offset = 70;
+    if (screen.width >= 768) {
+        fixed_offset = 80;
+    }
+    $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+    e.preventDefault();
+});
