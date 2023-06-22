@@ -58,6 +58,55 @@
     transition: all 0.3s
     &:hover
         left: 10px
+.our-partners__slide-img-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 83px
+    img
+        max-height: 100%
+.site-footer__wrapper
+    max-width: 100%
+.site-header__top
+    padding-bottom: 33px
+    border-bottom: 1px solid #CDCDCD
+.site-header__search-input
+    visibility: visible
+    width: 491px
+    opacity: 1
+.site-header__search button
+    background-color: transparent
+    border: 0
+.site-header__search button:focus
+    outline: none
+.site-header__top-right
+    grid-gap: 20px
+.site-header__phone
+    margin: 0 20px
+.site-header__call
+    color: #1B3281
+    font-size: 14px
+    line-height: 135.9%
+.site-header__nav
+    padding: 20px 0
+.site-header__nav-item
+    width: auto
+.site-header__nav-item-title
+    text-transform: uppercase
+    svg
+        margin-left: 9px
+    &::before
+        display: none
+.hero
+    padding-top: 0
+.hero__slider-wrapper
+    background: #1B3281 url("../img/ab-svg.svg") left center no-repeat
+.hero__slider-wrapper
+    max-width: 100%
+.hero .ab-top__img
+    z-index: 2
+.hero__slide
+    height: 460px
 @import "interface"
 @import "blog"
 @import "contacts"
@@ -277,12 +326,23 @@
                                 stroke: #1B3281
                             &.fill
                                 fill: #1B3281
+@media(max-width: 1439px)
+    .hero .ab-top__img
+        width: 620px
 @media(max-width: 1199px)
+    .hero .ab-top__img
+        width: 420px
+    .site-header__search-input
+        width: 320px
     .ninvest
         &-accel__wrap
             svg
                 transform: scale(0.7)
 @media(max-width: 991px)
+    .our-partners__slide-img-wrapper
+        max-height: 83px
+    .site-header__top
+        border-bottom: 0
     .ninvest
         &-partn
             &__wrap
@@ -295,6 +355,13 @@
             &+ .researches__content
                 display: grid
 @media(max-width: 575px)
+    .hero .ab-top__img
+        width: 90%
+    .site-header
+        &__call, &__lk
+            display: none
+    .our-partners__slide-img-wrapper
+        width: 80%
     .ninvest
         &-partn
             &__wrap

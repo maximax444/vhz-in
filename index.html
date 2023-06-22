@@ -113,14 +113,18 @@
                     </a>
                 </div>
                 <div class="site-header__top-right">
-                    <a href="tel:+74922325242" class="site-header__phone">+7 (4922) 32-52-42</a>
-                    <div class="site-header__search">
+                    <form class="site-header__search">
                         <input id="header-search-input" type="text" placeholder="Поиск..."
                             class="site-header__search-input">
-                        <label class="site-header__search-icon" for="header-search-input">
+                        <button class="site-header__search-icon" for="header-search-input">
                             <img src="icons/hex.svg" alt="Иконка" class="site-header__search-icon-img">
-                        </label>
-                    </div>
+                        </button>
+                    </form>
+                    <a href="tel:+74922325242" class="site-header__phone">+7 (4922) 32-52-42</a>
+                    <a href="" class="site-header__call">Обратный звонок</a>
+                    <a href="" class="site-header__lk">
+                        <img src="icons/header-lk.svg" alt="">
+                    </a>
                     <div class="hamburger">
                         <div></div>
                         <div></div>
@@ -133,7 +137,12 @@
                     <ul class="site-header__nav-list">
                         <li class="site-header__nav-item">
                             <div class="site-header__nav-item-wrapper">
-                                <div class="site-header__nav-item-title">Конкурс</div>
+                                <a href="" class="site-header__nav-item-title">Инвестиции</a>
+                            </div>
+                        </li>
+                        <li class="site-header__nav-item">
+                            <div class="site-header__nav-item-wrapper">
+                                <a href="" class="site-header__nav-item-title">Конкурс ПромТех 2.3</a>
                             </div>
                         </li>
                         <li class="site-header__nav-item">
@@ -184,10 +193,6 @@
                                     <li class="site-header__first-submenu-item">
                                         <div class="site-header__last-submenu-title">
                                             Стандарты раскрытия информации
-                                            <svg class="site-header__last-submenu-icon" width="6" height="9"
-                                                viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8L4.5 4.5L1 1" stroke="#1B3281" />
-                                            </svg>
                                         </div>
                                     </li>
                                     <li class="site-header__first-submenu-item">
@@ -203,10 +208,6 @@
                             <div class="site-header__nav-item-wrapper">
                                 <a href="resch.html" class="site-header__nav-item-title">
                                     Исследования
-                                    <svg class="site-header__first-submenu-list-icon" width="8" height="5"
-                                        viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
-                                    </svg>
                                 </a>
                             </div>
                         </li>
@@ -219,29 +220,25 @@
                                         <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
                                     </svg>
                                 </a>
+                                <ul class="site-header__first-submenu">
+                                    <li class="site-header__first-submenu-item">
+                                        <a href="/history.html" class="site-header__last-submenu-title">
+                                            История
+                                        </a>
+                                    </li>
+                                    <li class="site-header__first-submenu-item">
+                                        <a href="about.html" class="site-header__last-submenu-title">
+                                            Холдинг
+                                        </a>
+                                    </li>
+                                    <li class="site-header__first-submenu-item">
+                                        <div class="site-header__last-submenu-title">
+                                            Официальная информация
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                        <li class="site-header__nav-item">
-                            <div class="site-header__nav-item-wrapper">
-                                <a href="ways.html" class="site-header__nav-item-title">
-                                    Развитие
-                                    <svg class="site-header__first-submenu-list-icon" width="8" height="5"
-                                        viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="site-header__nav-item">
-                            <div class="site-header__nav-item-wrapper">
-                                <a href="press.html" class="site-header__nav-item-title">
-                                    Пресс-центр
-                                    <svg class="site-header__first-submenu-list-icon" width="8" height="5"
-                                        viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.5 0.5L4 4L7.5 0.5" stroke="black" />
-                                    </svg>
-                                </a>
-                            </div>
+                            <div class="site-header__submenu-overlay"></div>
                         </li>
                         <li class="site-header__nav-item">
                             <div class="site-header__nav-item-wrapper">
@@ -255,13 +252,16 @@
     </header>
     <section class="hero">
         <div class="hero__slider-wrapper">
+            <div class="ab-top__img animate__animated animate__fadeInRight">
+                <video data-videoplayer="1" muted="" playsinline="" autoplay="" preload="auto" loop="">
+                    <source src="video/home.mp4" type="video/mp4">
+                    <!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+                    <source src="video/home.webm" type="video/webm">
+                    <!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
+                </video>
+            </div>
             <div class="hero__slider">
                 <div class="hero__slide">
-                    <div class="hero__slide-img-wrapper">
-                        <img src="img/slides/slide-1.png" alt="слайд" class="hero__slide-img">
-                        <img src="img/slides/slide-1-mobile.png" alt="слайд"
-                            class="hero__slide-img hero__slide-img_mobile">
-                    </div>
                     <div class="container hero__slide-content">
                         <div class="hero__slide-title">
                             Запусти реакцию<br> с ВХЗ.31
@@ -272,11 +272,6 @@
                     </div>
                 </div>
                 <div class="hero__slide">
-                    <div class="hero__slide-img-wrapper">
-                        <img src="img/slides/slide-1.png" alt="слайд" class="hero__slide-img">
-                        <img src="img/slides/slide-1-mobile.png" alt="слайд"
-                            class="hero__slide-img hero__slide-img_mobile">
-                    </div>
                     <div class="container hero__slide-content">
                         <div class="hero__slide-title">
                             90 лет<br> лидерства
